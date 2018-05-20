@@ -26,6 +26,7 @@ header {
   width: 100%;
   border: solid 2px red;
   z-index: 1;
+  background-color: black;
 }
 .logo {
   display: flex;
@@ -36,7 +37,6 @@ header {
   height: 50px;
 }
 nav {
-  text-align: right;
   border: solid 2px red;
 
 }
@@ -68,17 +68,44 @@ nav span {
   background-image: url("../../resources/img-mission-background.jpg");
 }
 /*Items section styling*/
-.featured {
+#featured {
   width: 1000px;
+  height: 700px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
+  border: solid 2px red;
   justify-content: center;
+  margin: auto;
 }
-#items img {
+.items {
+  border: solid 2px red;
+}
+.items img {
   display: flex;
-
   height: 200px;
   width: 300px;
+  margin-bottom: 10px;
+}
+#featured .items {
+  flex-direction: row;
+  margin: 10px 10px;
+  flex-wrap: wrap;
+}
+#featured .image-content {
+  margin: auto;
+  width: 100%;
+  border: solid 2px red;
+  align-content: center;
+}
+/*Locations styling*/
+
+#locations {
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: solid 2px red;
+  justify-content: center;
+  margin: auto;
 }
