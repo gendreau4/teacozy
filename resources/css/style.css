@@ -5,14 +5,15 @@ body {
   color: seashell;
   font-size: 22px;
   text-align: center;
-  margin: 0;
+  margin: 0px;
 }
-.image-content {
+.content {
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
+
 }
 div {
   display: block;
@@ -25,8 +26,8 @@ header {
   border-bottom: 1px solid seashell;
   width: 100%;
   border: solid 2px red;
-  z-index: 1;
   background-color: black;
+  z-index: 1;
 }
 .logo {
   display: flex;
@@ -38,7 +39,8 @@ header {
 }
 nav {
   border: solid 2px red;
-
+text-align: right;
+flex-grow: 1;
 }
 nav span {
   display: inline-block;
@@ -58,14 +60,16 @@ nav span {
   border: solid 2px red;
   height: 700px;
   align-items: center;
-}
-#mission .image-content {
-  margin: auto;
-  height: 700px;
-  width: 100%;
-  border: solid 2px red;
-  align-content: center;
   background-image: url("../../resources/img-mission-background.jpg");
+}
+#mission .content {
+  display: block;
+  width: 100%;
+  background-color: black;
+  border: solid 2px red;
+}
+h2, h4{
+  border: solid 2px red;
 }
 /*Items section styling*/
 #featured {
@@ -73,13 +77,15 @@ nav span {
   height: 700px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   border: solid 2px red;
-  justify-content: center;
+  justify-content: space-between;
   margin: auto;
+  padding-top: 70px;
 }
 .items {
   border: solid 2px red;
+
 }
 .items img {
   display: flex;
@@ -92,35 +98,53 @@ nav span {
   margin: 10px 10px;
   flex-wrap: wrap;
 }
-#featured .image-content {
+#featured .content {
+  display: block;
   margin: auto;
   width: 100%;
   border: solid 2px red;
   align-content: center;
 }
+
 /*Locations styling*/
 
 #locations {
   height: 500px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-content: center;
   border: solid 2px red;
   margin: auto;
-  background-image: url("../resources/img-locations-background.jpg")
+  padding: 70px;
+  background-image: url("../../resources/img-locations-background.jpg")
 }
 #locations h2 {
   margin: auto;
-  display: flex;
-  align-text: center;
-}
-#locations .image-content {
-  margin: auto;
-  width: 100%;
-  border: solid 2px red;
+  display: block;
   align-content: center;
 }
+
+.location {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  width: 300px;
+  margin: 15px 40px;
+  justify-content: center;
+  opacity: 1;
+}
+
 /*Contact styling*/
 #contact {
+  border: solid 2px red;
+  height: 200px;
+}
+
+/*Footer*/
+footer {
+  margin-left: 20px;
+  text-align: left;
+  width: 100%;
   border: solid 2px red;
 }
