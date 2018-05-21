@@ -39,8 +39,9 @@ header {
 }
 nav {
   border: solid 2px red;
-text-align: right;
-flex-grow: 1;
+  text-align: right;
+  flex-grow: 1;
+  color: seashell;
 }
 nav span {
   display: inline-block;
@@ -77,26 +78,20 @@ h2, h4{
   height: 700px;
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
+  flex-grow: 1;
   border: solid 2px red;
-  justify-content: space-between;
   margin: auto;
   padding-top: 70px;
+  justify-content: center;
 }
 .items {
   border: solid 2px red;
-
 }
 .items img {
   display: flex;
   height: 200px;
   width: 300px;
-  margin-bottom: 10px;
-}
-#featured .items {
-  flex-direction: row;
-  margin: 10px 10px;
-  flex-wrap: wrap;
+  margin: 10px;
 }
 #featured .content {
   display: block;
@@ -112,6 +107,7 @@ h2, h4{
   height: 500px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   align-content: center;
   border: solid 2px red;
   margin: auto;
@@ -123,12 +119,13 @@ h2, h4{
   display: block;
   align-content: center;
 }
-
+#locations .content {
+  display: block;
+}
 .location {
   background-color: black;
   display: flex;
-  flex-wrap: wrap;
-  height: 400px;
+  flex-direction: row;
   width: 300px;
   margin: 15px 40px;
   justify-content: center;
