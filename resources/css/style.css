@@ -13,10 +13,12 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
-
 }
 div {
   display: block;
+}
+a {
+  color: seashell;
 }
 
 /*header styling*/
@@ -25,7 +27,6 @@ header {
   height: 69px;
   border-bottom: 1px solid seashell;
   width: 100%;
-  border: solid 2px red;
   background-color: black;
   z-index: 1;
 }
@@ -38,10 +39,8 @@ header {
   height: 50px;
 }
 nav {
-  border: solid 2px red;
   text-align: right;
   flex-grow: 1;
-  color: seashell;
 }
 nav span {
   display: inline-block;
@@ -58,7 +57,6 @@ nav span {
 /*mission section styling*/
 #mission {
   display: flex;
-  border: solid 2px red;
   height: 700px;
   align-items: center;
   background-image: url("../../resources/img-mission-background.jpg");
@@ -67,11 +65,8 @@ nav span {
   display: block;
   width: 100%;
   background-color: black;
-  border: solid 2px red;
 }
-h2, h4{
-  border: solid 2px red;
-}
+
 /*Items section styling*/
 #featured {
   width: 1000px;
@@ -79,13 +74,10 @@ h2, h4{
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
-  border: solid 2px red;
   margin: auto;
   padding-top: 70px;
+  padding-bottom: 90px;
   justify-content: center;
-}
-.items {
-  border: solid 2px red;
 }
 .items img {
   display: flex;
@@ -97,7 +89,6 @@ h2, h4{
   display: block;
   margin: auto;
   width: 100%;
-  border: solid 2px red;
   align-content: center;
 }
 
@@ -105,36 +96,28 @@ h2, h4{
 
 #locations {
   height: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: center;
-  border: solid 2px red;
+  display: block;
+  justify-content: center;
   margin: auto;
-  padding: 70px;
   background-image: url("../../resources/img-locations-background.jpg")
 }
 #locations h2 {
-  margin: auto;
-  display: block;
-  align-content: center;
-}
-#locations .content {
-  display: block;
+  padding-top: 50px;
 }
 .location {
   background-color: black;
-  display: flex;
-  flex-direction: row;
   width: 300px;
-  margin: 15px 40px;
-  justify-content: center;
+  margin: 5px 20px;
+  flex-basis: auto;
   opacity: 1;
+}
+.addresses {
+  display: flex;
+  justify-content: center;
 }
 
 /*Contact styling*/
 #contact {
-  border: solid 2px red;
   height: 200px;
 }
 
@@ -143,5 +126,4 @@ footer {
   margin-left: 20px;
   text-align: left;
   width: 100%;
-  border: solid 2px red;
 }
